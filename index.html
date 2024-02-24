@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      UMS | Lovely Professional University | University Management System
+    </title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+    /* removal of the default arrow icon. */
+    select {
+      -webkit-appearance: none;
+    }
+    @media (max-width: 990px) {
+      .main {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <div class="main flex">
+      <!-- left -->
+      <div class="relative w-2/4">
+        <img src="./img/bg-left.jpeg" alt="" class="absolute top-0 z-1" />
+        <img
+          src="./img/main.webp"
+          alt=""
+          class="absolute z-3 h-[676px] w-[688px] top-14 left-8"
+        />
+      </div>
+      <!-- right -->
+      <div class="bg-[#fbf1f1] w-2/4 h-[830px] max-h-full">
+        <div class="flex flex-col gap-6 mt-12 justify-center items-center">
+          <!-- both logo -->
+          <div class="flex gap-8 items-center">
+            <img src="./img/logo.svg" alt="" class="w-[80px]" />
+            <img src="./img/logo1.svg" alt="" class="h-[40px] w-[355px]" />
+          </div>
+          <!-- form -->
+          <div
+            class="w-[542px] h-[550px] shadow-2xl shadow-slate-500 px-6 py-10 bg-white rounded-md"
+          >
+            <div class="flex flex-col">
+              <form action="">
+                <div
+                  class="flex relative justify-center mx-11 gap-4 w-[430px] items-center"
+                >
+                  <h2 class="text-[25px]">Log in</h2>
+                  <select
+                    name=""
+                    id=""
+                    class="rounded-md my-4 pl-6 w-[345px] h-[55px] bg-[#fbf1f1]"
+                  >
+                    <option value="" selected>HeadOffice</option>
+                  </select>
+                  <img
+                    src="./img/arrow.svg"
+                    width="12"
+                    alt=""
+                    class="absolute right-5 top-8"
+                  />
+                </div>
+                <div class="relative">
+                  <input
+                    type="text"
+                    placeholder="User ID"
+                    class="rounded-sm mx-11 my-3 pl-6 w-[430px] h-[55px] bg-[#fbf1f1]"
+                  />
+                  <img
+                    src="./img/input-user.svg"
+                    alt=""
+                    width="15px"
+                    class="absolute right-10 top-8"
+                  />
+                </div>
+                <div class="relative">
+                  <input
+                    type="password"
+                    name=""
+                    id=""
+                    placeholder="Password"
+                    class="rounded-sm mx-11 my-3 pl-6 w-[430px] h-[55px] bg-[#fbf1f1]"
+                  />
+                  <img
+                    src="./img/input-eye-slash.svg"
+                    alt=""
+                    width="15px"
+                    class="absolute right-10 top-8"
+                  />
+                </div>
+                <div class="relative">
+                  <select
+                    name=""
+                    id=""
+                    class="rounded-sm mx-11 my-3 pl-6 w-[430px] h-[55px] bg-[#fbf1f1]"
+                  >
+                    <option value="" selectgited class="font-bold">
+                      Dashboard
+                    </option>
+                  </select>
+                  <img
+                    src="./img/arrow.svg"
+                    width="12"
+                    alt=""
+                    class="absolute right-10 top-8"
+                  />
+                </div>
+                <p class="ml-72 my-4">Forgot your password?</p>
+                <br />
+                <button
+                  class="rounded-md text-white mx-11 -my-9 bg-orange-400 w-[430px] h-[55px]"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 mt-10">
+            <img src="./img/mail-icon.svg" alt="" />
+            <a href="#" class="font-medium">Student Mail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
